@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		.outer {
+			position: relative;
+			background-color: pink;
+			height: 500px;
+			width: 500px;
+			perspective: 800px;
+			margin: 100px auto;
+			/*overflow: hidden;*/
+			/*overflow: scroll;*/
+			transform-style: preserve-3d;
+			-webkit-transform-origin: 50% 50%;
+			-webkit-transform: rotateY(40deg) rotateX(40deg);
+		}
+		.container {
+			position: relative;
+			height: 100%;
+			width: 100%;
+			border: 1px solid green;
+			-webkit-transform: translate3d(0px, 0px, 80px);
+			overflow: hidden;
+		}
+		.inner {
+			position: absolute;
+			background-color: yellow;
+			border: 1px solid blue;
+			height: 100px;
+			width: 100px;
+			-webkit-transform: translate3d(0px, 0px, 80px);
+			
+		}
+	</style>
+</head>
+<body>
+	<div class="outer">
+		<!-- <div class="container"> -->
+			<div class="inner"></div>
+			<div class="inner"></div>
+			<div class="inner"></div>
+		<!-- </div>	 -->
+	</div>
+</body>
+</html>
